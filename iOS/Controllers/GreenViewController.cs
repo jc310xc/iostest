@@ -17,12 +17,23 @@ namespace iostest.iOS
 			// Perform any additional setup after loading the view, typically from a nib.
 
 			View.BackgroundColor = UIColor.Green;
+
+
 		}
 
 		public override void DidReceiveMemoryWarning ()
 		{
 			base.DidReceiveMemoryWarning ();
 			// Release any cached data, images, etc that aren't in use.
+		}
+
+		partial void HandleYellowTouch(UIButton sender){
+			NavigationController.PushViewController(new YellowViewController(),false);
+		}
+
+		partial void HandlePurpleTouch (UIButton sender)
+		{
+			NavigationController.PushViewController(new PurpleViewController(),false);
 		}
 	}
 }

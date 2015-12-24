@@ -94,6 +94,8 @@
     <InterfaceDefinition Include="Layouts\GreenViewController.xib" />
     <InterfaceDefinition Include="Layouts\RedViewController.xib" />
     <InterfaceDefinition Include="Layouts\TabBarController.xib" />
+    <InterfaceDefinition Include="Layouts\YellowViewController.xib" />
+    <InterfaceDefinition Include="Layouts\PurpleViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -121,6 +123,14 @@
     <Compile Include="Controllers\BlueViewController.cs" />
     <Compile Include="Controllers\BlueViewController.designer.cs">
       <DependentUpon>BlueViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\YellowViewController.cs" />
+    <Compile Include="Controllers\YellowViewController.designer.cs">
+      <DependentUpon>YellowViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PurpleViewController.cs" />
+    <Compile Include="Controllers\PurpleViewController.designer.cs">
+      <DependentUpon>PurpleViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
